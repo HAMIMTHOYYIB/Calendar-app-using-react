@@ -1,0 +1,72 @@
+/* Center the calendar and set a max width */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 700px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the react-calendar component */
+.react-calendar {
+  width: 100%;
+  border: none;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(76, 175, 80); /* Main green background */
+  border-bottom: 1px solid #ddd;
+}
+
+.react-calendar__navigation button {
+  margin: 0 10px;
+  min-width: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4caf50; /* Button green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #999;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border to each cell */
+  box-sizing: border-box;
+  aspect-ratio:1.5;
+}
+
+.react-calendar__tile--active {
+  background: #4caf50; /* Active tile green */
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background-color: #81c784; /* Current day light green */
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: #c8e6c9; /* Hover light green */
+}

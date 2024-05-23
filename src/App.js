@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import CalendarComponent from './Calendar';
+import { format } from 'date-fns';
 import './App.css';
 
-function App() {
+const App = () => {
+  const currentDate = new Date();
+  const formattedDate = format(currentDate, 'd MMMM yyyy-EEEE');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{formattedDate}</h1>
+      <CalendarComponent />
     </div>
   );
-}
+};
 
 export default App;
