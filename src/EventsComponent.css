@@ -1,0 +1,45 @@
+  .addEvent  {
+    padding:6px;
+    border-radius:10px;
+    width:100%;
+  }
+  .addEvent input {
+    text-align: center;
+    width:70%;
+    height:40px;
+    border-radius:8px;
+    border: none;
+    margin-right:5px;
+    background-color: #99dc9c;
+    font-weight:bold;
+}
+.addEvent button {
+    width:85px;
+    background-color:#81c784;
+    border-radius:8px;
+    border: none;
+    height:40px;
+    font-weight:bold;
+}
+    
+  .Eve ul {
+    list-style:none;
+    padding:5px;
+    border-radius:5px;
+  }
+  
+  .Eve li {
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    background-color:#99dc9c;
+    color:black;
+    border-radius:5px;
+    margin-bottom:5px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .deletebtn,.editbtn{
+    background: none;
+    border: none;
+  }
